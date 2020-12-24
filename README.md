@@ -1,3 +1,4 @@
+![Python package](https://github.com/RealVNF/distributed-drl-coordination/workflows/Python%20package/badge.svg)
 # Distributed Service Scaling, Placement, and Routing Using Deep Reinforcement Learning
 Scaling, Placement, and Routing Using Deep Reinforcement Learning. Created as an implementation for my master's thesis.
 
