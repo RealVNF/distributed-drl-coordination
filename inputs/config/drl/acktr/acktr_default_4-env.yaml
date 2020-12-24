@@ -1,0 +1,60 @@
+# Default TRPO configurations
+agent: ACKTR_Agent
+
+n_env: 4
+
+# Policy and Value function NN sizes
+vf_nn: [64,64]
+pi_nn: [64,64]
+
+# NN activation function
+nn_activ: tanh
+
+# Policy to be used. Available: SPRPolicy, MlpPolicy, MlpLstmPolicy, MlpLnLstmPolicy
+policy: SPRPolicy
+
+# Discount factor
+gamma: 0.99
+
+# The number of steps to run for each environment per update 
+# (i.e. batch size is n_steps * n_env where n_env is number of environment copies running in parallel)
+n_steps: 20
+
+# Entropy coefficient for the loss calculation (default 0.01)
+ent_coef: 0.01
+
+# The learning rate, it can be a function
+learning_rate: 0.25
+
+# Value function coefficient for the loss calculation
+vf_coef: 0.25
+
+vf_fisher_coef: 1.0
+
+kfac_clip: 0.001
+
+kfac_update: 1
+
+lr_schedule: linear
+
+async_eigen_decomp: False
+
+# The maximum value for the gradient clipping
+max_grad_norm: 0.5
+
+# Factor for trade-off of bias vs variance for Generalized Advantage Estimator (null for default advantage estimator)
+gae_lambda: null
+
+
+# (int) the verbosity level:
+# 0 none, 1 training information, 2 tensorflow debug 
+verbose: 0
+
+# Episode Length
+episode_length: 20000    # Simulator timesteps
+
+# Reward history length
+reward_history_length: 1000
+
+# Testing duration in simulator timesteps
+testing_duration: 20000
