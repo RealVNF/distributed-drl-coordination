@@ -1,6 +1,6 @@
 ![Python package](https://github.com/RealVNF/distributed-drl-coordination/workflows/Python%20package/badge.svg)
 # Distributed Service Scaling, Placement, and Routing Using Deep Reinforcement Learning
-Scaling, Placement, and Routing Using Deep Reinforcement Learning. Created as an implementation for my master's thesis.
+Self-learning and self-adaptive service coordination using deep reinforcement learning (DRL). Service coordination includes scaling and placement of chained service components as well as scheduling and routing of flows/requests through the placed instances. We train our proposed DRL approach offline in a centralized fashion and then deploy a distributed DRL agent at each node in the network. This fully distributed DRL approach only requires local observation and control and significantly outperforms existing state-of-the-art solutions.
 
 ## Installation 
 This package requires stable_baselines to work. Before installing, make sure the following packages are installed on the system.
@@ -8,15 +8,26 @@ This package requires stable_baselines to work. Before installing, make sure the
 
 ```bash
 # On Ubuntu
-sudo apt-get update && sudo apt-get install cmake libopenmpi-dev python3-dev zlib1g-dev libgl1-mesa-glx
+sudo apt-get update && sudo apt-get install cmake libopenmpi-dev python3-dev zlib1g-dev libgl1-mesa-glx libsm6 libxext6
+# check your python3 version
+python3 --version
 ```
 
+If your Python version is neither 3.6 nor 3.7 (3.8+ does not support TensorFlow1, which is currently required by [`stable_baselines`](https://github.com/hill-a/stable-baselines)), manually install the correct version as described [here](https://www.techiediaries.com/ubuntu/install-python-3-pip-venv-ubuntu-20-04-19/):
 
-The package can then be installed as follows
+```
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.7 python3.7-dev
+```
+
+The package can then be installed as follows, requiring Python 3.6 or 3.7 :
 
 ```bash
 # Create a python 3 virtual environment
 python3 -m venv venv
+# if python3 != 3.6 or 3.7, use the manually installed python3.7 instead (see above)
 
 # Activate the virtual environment
 source venv/bin/activate
@@ -25,6 +36,8 @@ source venv/bin/activate
 pip install -U pip
 
 # Install the DRL package and its requirements
+python setup.py install
+# OR alternatively:
 pip install -r requirements.txt
 ```
 
