@@ -1,5 +1,5 @@
 ![Python package](https://github.com/RealVNF/distributed-drl-coordination/workflows/Python%20package/badge.svg)
-# Distributed Service Scaling, Placement, and Routing Using Deep Reinforcement Learning
+# Distributed Online Service Coordination Using Deep Reinforcement Learning
 Self-learning and self-adaptive service coordination using deep reinforcement learning (DRL). Service coordination includes scaling and placement of chained service components as well as scheduling and routing of flows/requests through the placed instances. We train our proposed DRL approach offline in a centralized fashion and then deploy a distributed DRL agent at each node in the network. This fully distributed DRL approach only requires local observation and control and significantly outperforms existing state-of-the-art solutions.
 
 ## Installation 
