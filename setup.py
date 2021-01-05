@@ -7,7 +7,8 @@ requirements = [
     'numpy>=1.16.4,<=1.19.3',
     'gym[atari]==0.15.7',
     'mpi4py==3.0.3',
-    'tqdm'
+    'tqdm',
+    'networkx==2.4'
 ]
 
 test_requirements = [

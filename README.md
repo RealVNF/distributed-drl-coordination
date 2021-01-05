@@ -36,8 +36,6 @@ source venv/bin/activate
 pip install -U pip
 
 # Install the DRL package and its requirements
-python setup.py install
-# OR alternatively:
 pip install -r requirements.txt
 ```
 
@@ -57,7 +55,7 @@ The `inputs` folder is structured as follows:
 
 ```
 
-Based on these inputs and after installation, a correct installation of the DRL agent can be checked as follows:
+Based on these inputs and after installation, a correct installation of the DRL agent can be checked as follows (ignore `tensorflow` warnings):
 
 ```
 $ spr-rl --help
@@ -81,6 +79,20 @@ To train an ACKTR DRL agent for 100,000 steps then test it immediately on the Ab
 ```
 $ spr-rl inputs/networks/abilene_1-5in-1eg/abilene-in1-rand-cap0-2.graphml inputs/config/drl/acktr/acktr_default_4-env.yaml inputs/config/simulator/mean-10.yaml inputs/services/abc-start_delay0.yaml 100000 -a
 ```
+
+The results and trained model are saved in the `results` directory, which is created automatically.
+
+### Tensorboard
+
+To visualize training progress, start `tensorboard`:
+
+```
+tensorboard --logdir tb
+```
+
+Then go to http://localhost:6006
+
+### Parallelization
 
 The training of the agent can be parallelized via the GNU Parallel tool. A helper scripts is already provided in the `utils` folder. The inputs of the agent must be defined in the corresponding `*.txt` files inside the `utils` folder To run the parallel scripts: From the current directory, run the following command:
 
