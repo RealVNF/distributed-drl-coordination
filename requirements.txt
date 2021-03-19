@@ -1,3 +1,3 @@
 --editable git://github.com/RealVNF/common-utils#egg=common-utils
---editable git://github.com/RealVNF/coord-sim@v2.0#egg=coord-sim
+--editable git://github.com/RealVNF/coord-sim#egg=coord-sim
 --editable .

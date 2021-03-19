@@ -18,7 +18,7 @@ test_requirements = [
 
 setup(
     name='spr-rl',
-    version='1.0',
+    version='1.0.1',
     description='Distributed Online Service Coordination Using Deep Reinforcement Learning',
     url='https://github.com/RealVNF/distributed-drl-coordination',
     author='Haydar Qarawlus, Stefan Schneider',
