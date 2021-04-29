@@ -3,6 +3,13 @@
 # Distributed Online Service Coordination Using Deep Reinforcement Learning
 Self-learning and self-adaptive service coordination using deep reinforcement learning (DRL). Service coordination includes scaling and placement of chained service components as well as scheduling and routing of flows/requests through the placed instances. We train our proposed DRL approach offline in a centralized fashion and then deploy a distributed DRL agent at each node in the network. This fully distributed DRL approach only requires local observation and control and significantly outperforms existing state-of-the-art solutions.
 
+<p align="center">
+  	<img src="docs/logos/realvnf.png" height="100" hspace="50"/>
+	<img src="docs/logos/upb.png" height="60" hspace="50"/>
+	<img src="docs/logos/huawei.png" height="100" hspace="50"/>
+    <img src="docs/logos/swc.png" height="100" hspace="50"/>
+</p>
+
 ## Citation
 
 If you use this code, please cite our [paper](https://ris.uni-paderborn.de/download/21543/21544/public_author_version.pdf):
