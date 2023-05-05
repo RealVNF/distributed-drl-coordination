@@ -58,8 +58,8 @@ source venv/bin/activate
 # Update pip
 pip install -U pip
 
-# Install the DRL package and its requirements
-pip install -r requirements.txt
+# Install the DRL package and its requirements (-e is for dev install)
+pip install -e .
 ```
 
 ## Usage
