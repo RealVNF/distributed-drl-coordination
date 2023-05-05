@@ -58,9 +58,11 @@ source venv/bin/activate
 # Update pip
 pip install -U pip
 
-# Install the DRL package and its requirements
-pip install -r requirements.txt
+# Install the DRL package and its requirements (-e is for dev install)
+pip install -e .
 ```
+
+On Windows 10+, you might need to install MPI separately: https://stackoverflow.com/a/54907810/2745116
 
 ## Usage
 

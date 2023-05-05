@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 requirements = [
+    'coord-sim==2.2.1',
     'tensorflow==1.14',
     'click',
     'stable-baselines==2.10',
@@ -8,7 +9,8 @@ requirements = [
     'gym[atari]==0.15.7',
     'mpi4py==3.0.3',
     'tqdm',
-    'networkx==2.4'
+    'networkx==2.4',
+    'protobuf<=3.20.3'
 ]
 
 test_requirements = [
@@ -18,7 +20,7 @@ test_requirements = [
 
 setup(
     name='spr-rl',
-    version='1.0.1',
+    version='1.0.2',
     description='Distributed Online Service Coordination Using Deep Reinforcement Learning',
     url='https://github.com/RealVNF/distributed-drl-coordination',
     author='Haydar Qarawlus, Stefan Schneider',
