@@ -9,7 +9,8 @@ requirements = [
     'gym[atari]==0.15.7',
     'mpi4py==3.0.3',
     'tqdm',
-    'networkx==2.4'
+    'networkx==2.4',
+    'protobuf<=3.20.3'
 ]
 
 test_requirements = [
