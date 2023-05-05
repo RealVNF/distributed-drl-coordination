@@ -62,6 +62,8 @@ pip install -U pip
 pip install -e .
 ```
 
+On Windows 10+, you might need to install MPI separately: https://stackoverflow.com/a/54907810/2745116
+
 ## Usage
 
 The inputs available for the DRL agent are placed in the `inputs` folder. 
