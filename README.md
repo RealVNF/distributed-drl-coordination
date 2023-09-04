@@ -125,3 +125,9 @@ The training of the agent can be parallelized via the GNU Parallel tool. A helpe
 $ ./utils/parallel.sh
 ```
 
+## Related Projects
+
+- Distributed DRL Coordination with Ray RLlib: https://github.com/burnCalories/distributed_VNF
+- Single-agent DRL Coordination (DeepCoord): https://github.com/RealVNF/DeepCoord
+- Coordination Simulation (coord-sim): https://github.com/RealVNF/coord-sim
+
